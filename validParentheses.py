@@ -16,7 +16,7 @@ class Solution:
       for c in s: 
         if c in closeToOpen:
             # stack[-1] is the last value added to the stack
-            if stack and stack[-1] == closeToOpen(c):
+            if stack and stack[-1] == closeToOpen[c]:
               stack.pop()
             else: 
               return False
